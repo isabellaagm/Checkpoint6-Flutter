@@ -1,16 +1,26 @@
-# checkpoint6
+# 🔐 Gerador de Senhas (Checkpoint 6)
 
-A new Flutter project.
+Um aplicativo de gerenciador de senhas completo construído com Flutter e Firebase.
 
-## Getting Started
+Este projeto permite aos usuários se autenticarem, gerar senhas seguras através de uma API externa e salvar/recuperar suas senhas de forma segura no Cloud Firestore.
 
-This project is a starting point for a Flutter application.
+## ✨ Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+* **Autenticação de Usuários:** Login e Registro usando Firebase Authentication (Email/Senha).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Geração de Senhas:** Conecta-se a uma API (`safekey-api`) via POST para gerar senhas com base em critérios do usuário (tamanho, maiúsculas, números, símbolos).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Segurança no Firestore:** Salva e lê senhas usando Regras de Segurança (Security Rules) e Índices (Indexes) do Firestore, garantindo que um usuário só possa ver suas próprias senhas.
+
+* **Interface Reativa:** Uso de `StreamBuilder` para atualizar a lista de senhas em tempo real.
+
+* **Tema Personalizado:** Interface estilizada (atualmente em tons de Roxo 💜).
+
+## 🚀 Como Rodar Localmente
+
+Este projeto usa Firebase, então alguns passos são necessários para rodá-lo:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/isabellaagm/Checkpoint6-Flutter.git](https://github.com/isabellaagm/Checkpoint6-Flutter.git)
+   cd Checkpoint6-Flutter
